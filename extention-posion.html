@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#btn1").click(function(){
+    $("div").animate({left: "500px"});
+  });
+  $("#btn2").click(function(){
+    $("div").animate({left: "10px"});
+  });
+});
+</script>
+<style>
+div {
+  position: relative;
+  height: 100px;
+  width: 100px;
+  margin: 10px 0;
+  background: coral;
+}
+</style>
+</head>
+<body>
+
+<button id ="btn1">Animate move</button>
+<button id="btn2">Animate back</button>
+
+<div></div>
+
+</body>
+</html>

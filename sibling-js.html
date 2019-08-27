@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("li.middle").siblings().css("background-color", "lightgreen");
+});
+</script>
+</head>
+<body>
+
+<ul>
+  <li>list item 1</li>
+  <li>list item 2</li>
+  <li class="middle">list item 3</li>
+  <li>list item 4</li>
+  <li>list item 5</li>
+</ul>
+
+</body>
+</html>

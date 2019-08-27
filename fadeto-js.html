@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<style>
+div {
+  padding: 15px;
+  background: #7F00FF;
+  color: white;
+  margin-bottom: 15px;
+}
+</style>
+</head>
+<body>
+
+<div>
+  <p>This is a Paragraph inside DIV</p>
+  <p>This is a Paragraph inside DIV</p>
+  <p>This is a Paragraph inside DIV</p>
+</div>
+
+<button>Click me</button>
+
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("div").fadeTo(500, 0.3);
+  });
+});
+</script>
+
+</body>
+</html>

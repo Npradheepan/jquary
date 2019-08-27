@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<style>
+p {
+  padding: 15px;
+  background: #7F00FF;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<h2>jQuery FadeIn and FadeOut</h2>
+<p>If you click on the "FadeOut" button, all paragraphs will disappear.</p>
+<p>Then, please click the "FadeIn" button.</p>
+
+<button id="fadeout-btn">Fade Out</button>
+<button id="fadein-btn">Fade In</button>
+
+<script>
+$(document).ready(function(){
+  // Fade out displayed paragraphs
+  $("#fadeout-btn").click(function(){
+    $("p").fadeOut();
+  });
+  // Fade in hidden paragraphs
+  $("#fadein-btn").click(function(){
+    $("p").fadeIn();
+  });
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<style>
+div {
+  padding: 15px;
+  background: #7F00FF;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<div>
+  <p>If you click on the "FadeOut" button, this DIV will disappear.</p>
+  <p>Then, please click the "FadeIn" button.</p>
+</div><br>
+
+<button id="fadeout-btn">Fade Out</button>
+<button id="fadein-btn">Fade In</button>
+<h3></h3>
+
+<script>
+$(document).ready(function(){
+  $("#fadeout-btn").click(function(){
+    $("div").fadeOut(600, function(){
+      $("h3").text("Fade OUT complete.");
+    });
+  });
+  $("#fadein-btn").click(function(){
+    $("div").fadeIn(600, function(){
+      $("h3").text("Fade IN complete.");
+    });
+  });
+});
+</script>
+
+</body>
+</html>

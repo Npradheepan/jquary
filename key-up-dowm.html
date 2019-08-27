@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("input").keydown(function(event){
+    $(this).css("background-color", "yellow");
+    $("span").text(event.type);
+  });
+  $("input").keyup(function(event){
+    $(this).css("background-color", "lightblue");
+    $("span").text(event.type);
+  });
+});
+</script>
+</head>
+<body>
+
+
+<p>Enter something in the input field below. It will change background color on keydown and keyup.</p>
+<p>Enter Something: <input type="text"></p>
+<p>Event type: <span style="color:red;"></span></p>
+
+</body>
+</html>

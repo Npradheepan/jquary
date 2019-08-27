@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("p").mousedown(function(){
+    $(this).after("<p style='color:red;'>Mouse button pressed</p>");
+  });
+  $("p").mouseup(function(){
+    $(this).after("<p style='color:green;'>Mouse button released</p>");
+  });
+});
+</script>
+</head>
+<body>
+
+<p>Press down and release the mouse button over this Paragraph.</p>
+
+</body>
+</html>

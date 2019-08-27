@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("div p:first-child").css("background", "coral");
+});
+</script>
+</head>
+<body>
+
+<p>This is a Paragraph.</p>
+
+<div style="border:1px solid;">
+  <p>This text is selected!</p>
+  <p>This text isn't selected.</p>
+</div><br>
+
+<div style="border:1px solid;">
+  <p>This text is selected!</p>
+  <p>This text isn't selected.</p>
+</div><br>
+
+<div style="border:1px solid;">
+  <h2>This text isn't selected: it's not a "p".</h2>
+  <p>This text isn't selected.</p>
+</div>
+
+<p>This is a Paragraph.</p>
+
+</body>
+</html>

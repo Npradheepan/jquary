@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("div").on("mousemove", function(){
+    $(this).text(Math.random());
+  });
+  $("button").click(function(){
+    $("div").off("mousemove");
+  }); 
+});
+</script>
+</head>
+<body>
+
+<div style="padding:50px 10px; border:1px solid;">Hover the mouse pointer over this DIV.</div>
+<p>Click the button to remove the event handler:</p>
+<button type="button">Remove Event</button>
+
+</body>
+</html>

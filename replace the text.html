@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p {
+  padding: 15px;
+  background: #7F00FF;
+  color: white;
+}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("p").css("background-color", "coral").hide(5000).show(1000);
+  });
+});
+</script>
+</head>
+<body>
+
+<p>This is a Paragraph</p>
+
+<button>Click me</button>
+
+</body>
+</html>
