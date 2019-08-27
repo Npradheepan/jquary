@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+    <title>Document</title>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+   
+</head>
+
+
+<script >
+    $(document).ready(function(){
+        $("h1").click(function(){
+            $("h1").append("<i> by online Tamil Tutorials</i>");
+        });
+        $("h3").click(function(){
+            $("<i>Friends</i>").appendTo("h3");
+        });
+        $("#p1").click(function(){
+            $("#p1").html("<b>hallo</b>");
+        });
+        $("#p2").click(function(){
+            $("#p2").text("Good Morning");
+        });
+        $("#B1").click(function(){
+            $("#B1").val("Good");
+        });
+    });
+
+</script>
+
+<style>
+
+
+</style>
+
+
+
+<body>
+        <div style="background-color: yellow">
+            <h1>Navaradnarajah</h1>
+            <h3>Stick to Basics</h3>
+        </div>
+    <p id="p1" >wel come to Köln</p>
+    <p id="p2">wetter report</p>
+    <input id="B1" type="button"/>
+    
+</body>
+</html>

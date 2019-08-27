@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+    <title>Document</title>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+   
+</head>
+
+
+<script >
+    function hideme()
+    {
+        $("#head1").hide(4000);
+    }
+    function showme()
+    {
+        $("#head1").show(4000);
+    }
+    function toggleme()
+    {
+        $("#head1").toggle("slow","linear");
+    }
+
+</script>
+
+<style>
+
+
+</style>
+
+
+
+<body>
+    <div>
+        <h1 id="head1"> Welcome To Navaradnarajah</h1>
+        <h6>stick to Basic</h6>
+    </div>
+    <input type="button" value="click to hide" onclick="hideme()"/>
+    <input type="button" value="click to show" onclick="showme()"/>
+    <input type="button" value="click to Toggle" onclick="toggleme()"/>
+    
+    
+    
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+</head>
+<script>
+    $(document).ready(function()
+    { 
+        $("h1:first").click(function(){
+            alert("First heading  clicked");
+        });
+        $("h1:last").click(function(){
+            alert("last  heading selected");
+        });
+        $("h1:eq(1)").click(function(){
+            alert("in the mittel clicked")
+        });
+        $("h1:not(#head1)").click(function(){
+            alert("Not function selected")
+        });
+        $("h2:gt(1)").click(function(){
+            alert("only Tamil tutorial is clicked");
+        });
+        $("h2:lt(1)").click(function(){
+            alert("only Navaradnarajah is clicked");
+        });
+        /*
+        $("h2:even").click(function(){
+            alert("even Nummer selected")
+        });
+        $("h2:odd").click(function(){
+            alert("odd nummer is selected")
+        });
+        $(":header").click(function(){
+            alert("all header function selected")
+        });
+        */
+    });
+    
+</script>
+<body>
+   <div style="background-color:lightblue">
+    <h1 id="head1">Pradheepan</h1>
+    <h1>stick to basics</h1>
+    <h1>Tamil tutorials</h1>
+   </div>
+   <div style="background-color: lightgreen">
+    <h2>Navaradnarajah</h2>
+    <h2>sitck to Basics</h2>
+    <h2>Tamil tutorials</h2>
+   </div>
+   <p style="background-color: rgb(232, 176, 109)">Welcome</p>
+    
+    
+</body>
+</html>

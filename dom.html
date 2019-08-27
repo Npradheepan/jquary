@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+    <title>Document</title>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+   
+</head>
+
+
+<script >
+    $(document).ready(function(){ 
+
+        $("h1").click(function(){
+            $("h2").addClass("C1 C2");
+        });
+        $("h2").click(function(){
+            alert($("h2")).hasClass("C1 C2");
+        });
+        $("#B1").click(function(){
+            $("h2").removeClass("C1 C2");
+        });
+
+    });
+
+</script>
+
+<style>
+.C1{
+    background-color: red;
+    color: white;
+}
+.c2
+{
+    font-family: sans-serif;
+    font-size: 40px;
+}
+
+</style>
+
+
+
+<body>
+    <h1>Navaradnarajah</h1>
+    <h2>stick to Basic</h2>
+    <input id="B1" type="button" value="click to remove the style">
+    
+</body>
+</html>

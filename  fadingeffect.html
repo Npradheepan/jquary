@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+    <title>Document</title>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+   
+</head>
+
+
+<script >
+    $(document).ready(function(){
+        $("#B1").click(function(){
+            $("#head2").slideDown(3000);
+        });
+
+        $("#B2").click(function(){
+            $("#head2").slideUp(1000);
+        });
+
+        $("#B3").click(function(){
+            $("#head2").stop();      
+        });
+        $("#hel").mouseover(function(){
+            $("#hel").animate({left:'900px',fontsize:'20px'},3000);
+            $("#hel").animate({bottom:'-400px',fontsize:'120px'},2000);
+        });
+    });
+
+</script>
+
+<style>
+
+
+</style>
+
+
+
+<body>
+    
+        <h1 id="head1"> Welcome To Navaradnarajah</h1>
+        <h2 id="head2" style="display: none">Tamil  to lern Tutorial</h2>
+        <h1 id="hel" style="position: relative">Stick to Basics</h1>
+    
+    <input type="button" value="click to down" id="B1"/>
+    <input type="button" value="click to up" id="B2"/>
+    <input type="button" value="click to stop" id="B3"/>
+    
+    
+    
+    
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+</head>
+<script>
+    $(document).ready(function()
+    { 
+        $(".D1 h1:first-child").click(function(){
+            alert("First heading  clicked");
+        });
+        $(".D1 h1:last-child").click(function(){
+            alert("last  heading selected");
+        });
+        $(".D2 h2:nth-child(even)").click(function(){
+            alert("in the Even clicked")
+        });
+        $(".D3 p:only-child").click(function(){
+            alert("Only function selected")
+        });
+        
+        
+    });
+    
+</script>
+<body>
+    <h1>Welcome</h1>
+   <div  class="D1" style="background-color:lightblue">
+    <h1 id="head1">Pradheepan</h1>
+    <h1>stick to basics</h1>
+    <h1>Tamil tutorials</h1>
+   </div>
+   <div class="D2" style="background-color: lightgreen">
+    <h2>one</h2>
+    <h2>Two</h2>
+    <h2>Three</h2>
+   </div>
+   <div class="D3" style="background-color: rgb(232, 176, 109)">
+       <p >Welcome</p>
+   </div>
+   
+    
+    
+</body>
+</html>

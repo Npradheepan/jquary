@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+    <title>Document</title>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+   
+</head>
+
+
+<script >
+    $(document).ready(function(){
+        $("#B1").click(function(){
+            $("h1").wrap("<div></div>");
+        });
+        $("#B2").click(function(){
+            $("h1").wrapInner("<p>Welcome</p>");
+        });
+        
+        $("#B3").click(function(){
+            $("h1").wrapAll("<div style='border:3px dashed red'> </div>");
+        });
+
+        $("#B4").click(function(){
+            $("h1").unwrap("<div></div>");
+        });
+    });
+
+</script>
+
+<style>
+div{
+    background-color: rgb(216, 220, 220);
+    height: auto;
+    width: auto;
+    color: red;
+}
+
+</style>
+
+
+
+<body>
+    
+        <h1> Welcome To Navaradnarajah</h1>
+        <h1>Tamil  to lern Tutorial</h1>
+        <h1>Stick to Basics</h1>
+        <h1>Start to lerning</h1>
+        
+    
+    <input type="button" value="wrap me" id="B1"/>
+    <input type="button" value="wrapInner me" id="B2"/>
+    <input type="button" value="wrapAll me" id="B3"/>
+    <input type="button" value="Unwrap me" id="B4"/>
+    
+    
+    
+    
+</body>
+</html>

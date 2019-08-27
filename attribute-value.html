@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+</head>
+<script>
+    $(document).ready(function()
+    { 
+        $("h1[id^='head2']").click(function()
+        {
+            alert("clicked");
+        });
+        $("h3[id$='one']").click(function(){
+
+            alert("clicked of head3");
+        });
+
+    });
+</script>
+<body>
+    <h1 id="head2">Wegen Bauvorhaben Seen zugeschüttet </h1>
+    <h1 id="Head2">Heftiger Streit um Wasserrechte</h2>
+    <h3 id="head1one">Gilt der Dresscode auch bei sehr hohen Temperaturen?</h3>
+    <h4 id="head1two">Müssen Arbeitgeber kostenfrei Wasser zur Verfügung stellen?</h4>
+    <!-- 
+        <h1 id="title">Wettkampf um die Batterie der Zukunft spitzt sich zu</h1>
+     <h3 id="main">Wie viele Geflüchtete machen eine Ausbildung?</h3>
+        <p>Laut Angaben der Bundesagentur für Arbeit befinden sich 38.000 Geflüchtete derzeit in einer Ausbildung. 
+            Die Zahl ist damit stetig gestiegen. 2017 machten nur 27.000 Flüchtlinge eine Ausbildung, 2016 nur 3.900. Insgesamt gibt es 530.000 Ausbildungsplätze. Auch auf dem Lehrstellenmarkt gilt: Geflüchtete füllen vor allem Lücken, 
+            wo Betriebe keine anderen Auszubildenden mehr finden. </p>
+        <h3>Europäisches Startup zieht Milliarden an</h3>
+    <div>
+        
+        <span>
+            <h1> 35 Prozent </h1> 
+            <p>Nun hat sich der Batteriekonkurrenzkampf also zugespitzt. 
+                Auch in China bestehen lokale Produzenten wie beispielsweise CATL, 
+                die in der Lage sind, die wachsende Nachfrage zu decken. Im Zentrum steht dabei allerdings laut Elon Musk nebst dem Kostenfaktor vor allem die Energiedichte der Batterien. Je mehr Energie in der Zelle gespeichert werden kann, 
+                desto günstiger und vor allem effizienter werden die Elektroautos.</p>
+            <h1>Moore’s Law für Batterien?</h1>
+        </span>
+    <p>Wird Tesla bald selber Batteriezellen herstellen? An der Aktionärsversammlung im Juni haben solche Andeutungen von Tesla-Managern zu heftigen Spekulationen an der Wall Street geführt. 
+        Auch in Europa und China werden Milliarden in Batteriekapazität investiert. 
+        Der Wettbewerb im Batteriebereich wird zusehends als zentral betrachtet.</p>
+        <h4>Wie viele Geflüchtete haben einen Job?</h4>
+        <p>Derzeit liegt die Beschäftigungsquote der Geflüchteten bei rund 35 Prozent. 
+            Ziel der Bundesagentur für Arbeit ist es, im Jahr 2025 eine Quote von 50 Prozent zu erreichen. Das würde dann der Quote bei der Gruppe aller anderen Migrantinnen und Migranten in Deutschland entsprechen. Detlef Scheele, Bundesvorsitzender der BA, sagte ZEIT ONLINE, er erwarte, 
+            dass diese Quote sogar etwas eher erreicht sei. </p>
+    </div>
+    -->
+</body>
+</html>

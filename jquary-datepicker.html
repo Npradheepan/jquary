@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <link rel="stylesheet" href="jquery/jquery-ui.css">
+    <title>Datepicker</title>
+    <script>
+    $("document").ready(function(){
+        $("#T1").datepicker({
+        defaultDate:"null",
+        buttonText:"Select Date",
+        altFormat:"D,d m,yy",
+        altField:"#T2",
+        showOn:"both"
+        });
+
+    });
+    </script>
+    <style>
+       
+    </style>
+</head>
+<body>
+        Enter The Date <input type="text" id="T1"/> 
+        Modified Date Format <input type="text" id="T2"/>   
+   
+</body>
+</html>

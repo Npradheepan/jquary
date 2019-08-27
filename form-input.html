@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+</head>
+<script>
+    $(document).ready(function()
+    { 
+        $(":text").click(function(){
+
+            alert("Text box is clicked");
+        });
+        $(":button").click(function(){
+
+            alert("The Button is clicked");
+        });
+        $(":submit").click(function(){
+
+            alert("The submit Button clicked");
+        });
+        $(":reset").click(function(){
+
+            alert("The Reserv Button clicked");
+        });
+        
+    });
+    function selectme()
+    {
+        alert($("option:selected").length+ "select options")
+    }
+    function checkme()
+    {
+        alert($("input:checked").length+ "check options")
+    }
+</script>
+<body>
+   <input type="text" name="text1" /> <br>
+   <input type="button"name="button1" value="click me"/>
+   <input type="submit" name="button2" />
+   <input type="reset" mane="button3" />
+   <br>
+   <br>
+   <br>
+   <select multiple>
+       <option>Deutschland</option>
+       <option>India</option>
+   </select>
+   <br>
+   <br>
+   <br>
+   <input type="button" name="button4" value="select me" onclick="selectme()"/>
+   <br>
+   <br>
+   Football<input type="checkbox" />
+   BasketBall <input type="checkbox"/>
+   <input type="button" name="button5" value="check me" onclick="checkme()"/>
+
+    
+    
+</body>
+</html>

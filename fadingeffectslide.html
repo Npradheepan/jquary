@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+    <title>Document</title>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+   
+</head>
+
+
+<script >
+    function fadeoutme()
+    {
+        $("#head1").fadeOut();
+    }
+    function fadeinme()
+    {
+        $("#head1").fadeIn();
+    }
+    function fadetoggleme()
+    {
+        $("#head1").fadeToggle(5000);
+    }
+    function fadetome()
+    {
+        $("#head1").fadeTo(3000,0.4);
+    }
+
+</script>
+
+<style>
+
+
+</style>
+
+
+
+<body>
+    <div>
+        <h1 id="head1"> Welcome To Navaradnarajah</h1>
+        <h6>stick to Basic</h6>
+    </div>
+    <input type="button" value="click to FadeOut" onclick="fadeoutme()"/>
+    <input type="button" value="click to FadeIn" onclick="fadeinme()"/>
+    <input type="button" value="click to FadeToggle" onclick="fadetoggleme()"/>
+    <input type="button" value="click to FadeTo" onclick="fadetome()"/>
+    
+    
+    
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+    <title>Document</title>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+   
+</head>
+
+
+<script >
+    $(document).ready(function(){
+        $("#B1").click(function(){
+            $("h1").before("<h3>Hallo</h3>");
+            $("<i>hallo<i>").insertBefore("h1");
+        });
+        $("#B2").click(function(){
+            $("h1").after("<p>Wellcome</p>"); 
+            $("<p><i>Welcome</i></p>").insertAfter("h1");  
+        });
+        $("#B3").click(function(){
+            $("img").clone().appendTo("#D1");
+        });
+    });
+
+</script>
+
+<style>
+
+
+</style>
+
+
+
+<body>
+    
+        <h1> Welcome To Navaradnarajah</h1>
+        <h1>Tamil  to lern Tutorial</h1>
+        <h1>Stick to Basics</h1>
+        <h1>Start to lerning</h1>
+        <div id="D1" width="500px" height="500px" style="background-color:rgb(71, 243, 140)">
+            <img width="100px" height="100px" src="imageser.jpg" alt="messenger"/>
+        </div>
+    
+    <input type="button" value="Before" id="B1"/>
+    <input type="button" value="After" id="B2"/>
+    <input type="button" value="Clone me" id="B3"/>
+ 
+    
+    
+    
+    
+</body>
+</html>
